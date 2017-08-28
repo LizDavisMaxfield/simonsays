@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { QuotesPage } from '../quotes/quotes';
+import { ShopPage } from '../shop/shop';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +13,11 @@ export class HomePage {
 
   }
 
+  onGoToQuotes() {
+    this.navCtrl.push(QuotesPage);
+  }
+
+  onGoToShop() {
+    this.navCtrl.push(ShopPage)
+  }
 }
